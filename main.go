@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+	// set config
 	cfg := config.GetConfig()
 	db := mysql.InitDB(cfg)
 	mysql.MigrateData(db)
